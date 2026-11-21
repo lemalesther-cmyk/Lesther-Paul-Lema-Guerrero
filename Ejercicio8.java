@@ -1,0 +1,24 @@
+/**
+ * @author Lesther Paul Lema Guerrero
+ */
+import java.util.Scanner;
+
+public class Ejercicio8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String clave;
+
+        do {
+            System.out.print("Ingrese la contraseña: ");
+            clave = sc.nextLine();
+
+            if (!clave.equals("java2026")) {
+                System.out.println("Contraseña incorrecta. Intente de nuevo.");
+            }
+        } while (!clave.equals("java2026"));
+
+        System.out.println("Acceso concedido.");
+
+        sc.close();
+    }
+}
